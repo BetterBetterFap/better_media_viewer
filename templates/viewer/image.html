@@ -1,0 +1,5 @@
+{% extends 'viewer/base.html' %}
+
+{% block media %}
+<img class="rounded mx-auto d-block img-fluid" src="{{ content.file_field.url }}" alt="Content image">
+{% endblock %}

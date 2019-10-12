@@ -1,0 +1,8 @@
+{% extends 'viewer/base.html' %}
+
+{% block media %}
+<video controls>
+    <source src="{{ content.file_field.url }}" type="{{ ext }}">
+    Unsupported video tag
+</video>
+{% endblock %}

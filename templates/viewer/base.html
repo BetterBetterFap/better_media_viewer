@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" value="Alexander Corley">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        {% block title %}<title>django webpage</title>{% endblock %}
+        <script src="https://api.html5media.info/1.1.5/html5media.min.js"></script>
+    </head>
+    <body>
+        {% include 'viewer/navbar.html' %}
+        <div class="container">
+            {% block media %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
